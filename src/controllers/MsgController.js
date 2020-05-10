@@ -4,6 +4,10 @@ const Grap = mongoose.model('User');
 const Grap2 = mongoose.model('Msg');
 
 module.exports = {
+    async index(req, res){
+        const products = await Grap2.find();
+        return res.json(products);
+    },
     async store(req, res){
         const { user } = req.headers;//pega a mensagem do usuario.
         const { idDel } = req.params;//pegando a sala escolhida.

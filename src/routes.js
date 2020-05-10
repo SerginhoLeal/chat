@@ -14,6 +14,7 @@ routes.get('/N8StfLisOs9z85cbPwYl', MUController.index);
 routes.post('/OTT7RrH1TRC7Ypo2iYtR', MUController.login);
 routes.post('/C7Ypo2iFU0OTT7RrH1TR', MUController.store);
 
+routes.get('/85cbPN8StflLisOs9zwY', SendController.index);
 routes.post('/GdXLWUFQwwAm927q/:idDel/se2Y4bkhAHMxPLRX', SendController.store);
 
 module.exports = routes;

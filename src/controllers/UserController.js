@@ -17,10 +17,10 @@ module.exports = {
         if(!user)
             return res.status(400).send({error:'Nome inexistente'});
         
-        if(!await bcrypt.compare(password, user.password))
-            return res.status(400).send({error:'Senha invalida'});
+        // if(!await bcrypt.compare(password, user.password))
+        //     return res.status(400).send({error:'Senha invalida'});
         
-        user.password = undefined;
+        // user.password = undefined;
 
         res.send({
             user,
